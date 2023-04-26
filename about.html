@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Education project</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <a class="logo" href="Index.html"><img src="img/logo.svg" alt="logotype"></a>
+      <ul class="header-menu">
+        <li class="menu__list"><a class="menu__link" href="Index.html">Главная</a></li>
+        <li class="menu__list"><a class="menu__link" href="students.html">Студенты</a></li>
+        <li class="menu__list"><a class="menu__link menu__link_active" href="#">О курсе</a></li>
+        <li class="menu__list"><a class="menu__link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <a class="button" href="#">Войти</a>
+    </header>
+    <main class="main">
+      <div class="uniqcontent-about">
+        <p class="about-title">О курсе 📱</p>
+        <p class="about-subtitle">Посмотрите видео о нас</p>
+        <iframe class="video" src="https://www.youtube.com/embed/zmcCy_UfrOc" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </main>
+    <div class="popup_wrapper">
+      <div class="popup">
+        <div class="popup__subtitle">Войти на сайт</div>
+        <input class="login" type="text" placeholder="  Логин">
+        <input class="password" type="text" placeholder="  Пароль">
+        <a class="button popup_button" href="#">Войти</a>
+      </div>
+    </div>
+    <footer class="footer about-footer">
+      <p class="footer_text">
+        2023 © <a class="footer_part">учебный центр</a>
+      </p>
+    </footer>
+  </div>
+  <script>
+    const popup = document.querySelector('.popup_wrapper');
+    const buttonElement = document.querySelector('.button')
+    buttonElement.addEventListener('click', function (popupOn) {
+      popup.classList.toggle('visible');
+    });
+  </script>
+</body>
+
+</html>
