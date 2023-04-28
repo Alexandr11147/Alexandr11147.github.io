@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="main.js">
+  <title>Education project</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <a class="logo" href="index.html"><img class="linklogo" src="img/logo.svg" alt="logotype"><img class="burger"
+          src="img/icons8-30.svg" alt="logotype"></a>
+      <ul class="header-menu">
+        <li class="menu__list"><a class="menu__link menu__link_active" href="#">Главная</a></li>
+        <li class="menu__list"><a class="menu__link" href="students.html">Студенты</a></li>
+        <li class="menu__list"><a class="menu__link" href="about.html">О курсе</a></li>
+        <li class="menu__list"><a class="menu__link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <a class="button" href="#">Войти</a>
+    </header>
+    <main>
+      <div class="aboutme-wrapper">
+        <h1 class="aboutme-title">Мой первый сайт. Основы веб-верстки</h1>
+        <p class="aboutme-text">Привет, меня зовут Алекс, я познакомлю Вас с новой интересной профессией, которую я
+          освоил благодаря
+          Университету Иннополис.</p>
+        <p class="aboutme-text">Веб-разработчик – это специалист, который создает структуру веб-страниц, формирует
+          каркас сайта, переводит
+          дизайн в HTML и CSS.</p>
+        <p class="aboutme-text">Специалист этой сферы отвечает за корректное отображение контента и визуальных
+          элементов
+          на сайте. Для этого
+          он создает код сайта с использованием языков CSS и HTML, что позволяет браузеру распознавать и показывать
+          посетителям сайта информацию, так, как задумывали разработчики.</p>
+
+        <h2 class="aboutme-text aboutme-subtitle">В программе курса мы познакомились:</h2>
+        <ul class="aboutme-text">
+          <li>- c основами HTML и CSS;</li>
+          <li>- с языком программирования JavaScript;</li>
+          <li>- работали с системой контроля версий Git;</li>
+          <li>- работали над учебным проектом;</li>
+          <li>- методологией веб-разработки БЭМ;</li>
+        </ul>
+        <p class="aboutme-text">На всем протяжении курса нас сопровождали первокласные практикующие специалисты.
+          Преподаватели
+          курса — опытные специалисты из ИТ-индустрии. Делать
+          первые шаги в профессии нам помогали проверки домашних заданий и полезные рекомендации. Это позволяло лучше
+          разобраться в темах курса и быстрее усвоить новую информацию.</p>
+
+        <div class="animation">
+          <div class="content__heading">
+            <span class="first-char">“</span>
+            <h2 class="heading">Учимся<br> вместе!</h2>
+            <span class="last-char">”</span>
+          </div>
+        </div>
+      </div>
+      <div class="popup_wrapper">
+        <div class="popup">
+          <div class="popup__subtitle">Войти на сайт</div>
+          <input class="login" type="text" placeholder="  Логин">
+          <input class="password" type="text" placeholder="  Пароль">
+          <a class="button popup_button" href="#">Войти</a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer students-footer">
+      <p class="footer_text">
+        2023 © <a class="footer_part">учебный центр</a>
+      </p>
+    </footer>
+
+    <script>
+      const popup = document.querySelector('.popup_wrapper');
+      const buttonElement = document.querySelector('.button')
+      buttonElement.addEventListener('click', function (popupOn) {
+        popup.classList.toggle('visible');
+      });
+    </script>
+</body>
+
+</html>
